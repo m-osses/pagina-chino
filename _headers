@@ -1,0 +1,6 @@
+/*.jpg
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+/*.png
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+/
+  Cache-Control: public, max-age=0, must-revalidate
