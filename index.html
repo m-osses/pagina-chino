@@ -88,7 +88,20 @@
 @media(max-width:800px){.nav{align-items:flex-start}.navlinks{gap:12px}.navlinks a:not(.btn){display:none}.hero{min-height:530px}.facts-grid{grid-template-columns:repeat(2,1fr)}.fact:nth-child(2){border-right:0}.fact:nth-child(1),.fact:nth-child(2){border-bottom:1px solid #ded8cd;padding-bottom:18px}.intro-grid,.location-grid,.stay-grid{grid-template-columns:1fr;gap:34px}.image-stack img{height:340px}.map-panel iframe{height:260px}.cards{grid-template-columns:1fr}.contact-card{padding:24px}section{padding:60px 0}.nav{gap:12px}.brand img{width:72px}.navlinks .btn{padding:10px 12px;font-size:.82rem;text-align:center}}
 .contact-card p{color:var(--ink)}.contact-card .note{color:var(--muted)}
 
-.btn.share-whatsapp{background:#176748}
+.btn.share-whatsapp{
+  position:fixed;
+  right:max(16px,env(safe-area-inset-right));
+  bottom:max(16px,env(safe-area-inset-bottom));
+  z-index:100;
+  max-width:calc(100% - 32px);
+  background:#176748;
+  border:1px solid #fff;
+  border-radius:999px;
+  box-shadow:0 4px 16px #0004;
+  font-size:.9rem;
+}
+.btn.share-whatsapp:focus-visible{outline:3px solid #e7c995;outline-offset:3px}
+.footer{padding-bottom:calc(82px + env(safe-area-inset-bottom))}
 .gallery{background:#f3ede2}
 .gallery-room + .gallery-room{margin-top:32px}
 .gallery-room h3{font:400 1.4rem Georgia,serif;color:#483224;margin:0 0 14px}
@@ -115,8 +128,53 @@
       <h3>Living-comedor</h3>
       <div class="gallery-grid">
         <figure class="gallery-frame">
-          <a href="portada-living-comedor.webp" aria-label="Ver foto de living-comedor">
+          <a href="portada-living-comedor.webp">
             <img src="portada-living-comedor.webp" width="1920" height="1440" loading="lazy" decoding="async" alt="Mesa y sofá cama del living-comedor">
+          </a>
+        </figure>
+        <figure class="gallery-frame">
+          <a href="living-comedor-otra-vista-ebcb3433e3d2.webp">
+            <img src="living-comedor-otra-vista-ebcb3433e3d2.webp" width="452" height="339" loading="lazy" decoding="async" alt="Vista del sofá cama desde el comedor">
+          </a>
+        </figure>
+      </div>
+    </div>
+    <div class="gallery-room">
+      <h3>Dormitorio matrimonial</h3>
+      <div class="gallery-grid">
+        <figure class="gallery-frame">
+          <a href="dormitorio-matrimonial-aa0e0eb19fd2.webp">
+            <img src="dormitorio-matrimonial-aa0e0eb19fd2.webp" width="1440" height="1080" loading="lazy" decoding="async" alt="Cama matrimonial del departamento">
+          </a>
+        </figure>
+      </div>
+    </div>
+    <div class="gallery-room">
+      <h3>Dormitorio con dos camas</h3>
+      <div class="gallery-grid">
+        <figure class="gallery-frame">
+          <a href="dormitorio-dos-camas-93b1897bf8e0.webp">
+            <img src="dormitorio-dos-camas-93b1897bf8e0.webp" width="1440" height="1080" loading="lazy" decoding="async" alt="Dos camas individuales del segundo dormitorio">
+          </a>
+        </figure>
+      </div>
+    </div>
+    <div class="gallery-room">
+      <h3>Cocina</h3>
+      <div class="gallery-grid">
+        <figure class="gallery-frame">
+          <a href="cocina-horno-6340d4869066.webp">
+            <img src="cocina-horno-6340d4869066.webp" width="1440" height="1080" loading="lazy" decoding="async" alt="Cocina a gas y horno">
+          </a>
+        </figure>
+      </div>
+    </div>
+    <div class="gallery-room">
+      <h3>Baño</h3>
+      <div class="gallery-grid">
+        <figure class="gallery-frame">
+          <a href="bano-506e9b3c1269.webp">
+            <img src="bano-506e9b3c1269.webp" width="1440" height="1080" loading="lazy" decoding="async" alt="Inodoro y bidé del baño">
           </a>
         </figure>
       </div>
@@ -125,8 +183,13 @@
       <h3>Ingreso al edificio</h3>
       <div class="gallery-grid">
         <figure class="gallery-frame">
-          <a href="ingreso-edificio.webp" aria-label="Ver foto de ingreso al edificio">
+          <a href="ingreso-edificio.webp">
             <img src="ingreso-edificio.webp" width="1200" height="900" loading="lazy" decoding="async" alt="Hall de entrada del edificio">
+          </a>
+        </figure>
+        <figure class="gallery-frame">
+          <a href="ingreso-reja-8c11296baf4b.webp">
+            <img src="ingreso-reja-8c11296baf4b.webp" width="1440" height="1080" loading="lazy" decoding="async" alt="Entrada del edificio desde la reja">
           </a>
         </figure>
       </div>
@@ -134,6 +197,7 @@
   </div>
 </section>
 <section id="ubicacion"><div class="wrap location-grid"><div><div class="section-kicker">Una ubicación estratégica</div><h2 class="section-title">Córdoba, a un paso.</h2><p>Sobre Bulevar Chacabuco, en el Centro Histórico, entre el área histórica y comercial y la dinámica de Nueva Córdoba. Una base práctica para recorrer la ciudad y llegar a distintos puntos de interés.</p><ul class="nearby"><li><strong>Plaza San Martín</strong><span>aprox. 5 min a pie</span></li><li><strong>Manzana Jesuítica</strong><span>aprox. 8 min</span></li><li><strong>Nueva Córdoba</strong><span>aprox. 10 min</span></li><li><strong>Paseo del Buen Pastor</strong><span>aprox. 12 min</span></li><li><strong>Terminal de Ómnibus</strong><span>aprox. 8 min</span></li></ul><p class="note">Tiempos orientativos; conviene verificarlos según el recorrido elegido.</p></div><div class="map-panel"><a class="map-link" href="https://maps.google.com/?q=Bulevar+Chacabuco+52+C%C3%B3rdoba+Argentina" target="_blank" rel="noopener" aria-label="Abrir la ubicación en Google Maps"><iframe src="https://maps.google.com/maps?q=Bulevar+Chacabuco+52,+C%C3%B3rdoba,+Argentina&amp;z=16&amp;output=embed" title="Mapa de la ubicación: Bulevar Chacabuco 52, Córdoba" loading="lazy" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer-when-downgrade"></iframe></a><div class="map-info"><strong>Docta Chacabuco 52</strong><p>Bulevar Chacabuco 52<br>Centro Histórico · Córdoba Capital</p><a class="btn" href="https://maps.google.com/?q=Bulevar+Chacabuco+52+C%C3%B3rdoba+Argentina" target="_blank" rel="noopener">Ver ubicación en el mapa</a></div></div></div></section>
-<section class="stay" id="contacto"><div class="wrap stay-grid"><div><div class="section-kicker">¿Planeás quedarte más tiempo?</div><h2 class="section-title">Tu estadía en Córdoba, a tu manera.</h2><p>Consultá por estadías prolongadas y contanos qué fechas tenés en mente. Te responderemos por correo para ayudarte a organizar tu visita.</p><div class="hero-actions"><a class="btn" href="mailto:chacabuco52cordoba@gmail.com?subject=Consulta%20por%20estad%C3%ADa%20prolongada">Escribir por email</a><a class="btn" href="https://wa.me/5493512148993?text=Hola%2C%20quisiera%20consultar%20por%20una%20estad%C3%ADa%20en%20Docta%20Chacabuco%2052" target="_blank" rel="noopener">Consultar por WhatsApp</a><a class="btn share-whatsapp" href="https://wa.me/?text=Casa%20Docta%20Chacabuco%2052%20%E2%80%94%20https%3A%2F%2Fwww.doctachacabuco52.com.ar%2F" target="_blank" rel="noopener">Compartir por WhatsApp</a></div></div><div class="contact-card"><h3>Reservas y consultas</h3><p>Consultá por estadías prolongadas:</p><a class="email" href="mailto:chacabuco52cordoba@gmail.com">chacabuco52cordoba@gmail.com</a><p><strong>WhatsApp:</strong> <a class="email" href="https://wa.me/5493512148993?text=Hola%2C%20quisiera%20consultar%20por%20una%20estad%C3%ADa%20en%20Docta%20Chacabuco%2052" target="_blank" rel="noopener">+54 9 351 214 8993</a></p><div class="platforms"><a class="platform" href="https://andesrooms.com/q?q=la-docta-chacabuco" target="_blank" rel="noopener">Reservar ahora<small>Ver alojamiento</small></a></div><a class="qr" href="https://wa.me/5493512148993?text=Hola%2C%20quisiera%20consultar%20por%20una%20estad%C3%ADa%20en%20Docta%20Chacabuco%2052" target="_blank" rel="noopener"><img src="qr-whatsapp.svg" width="120" height="120" alt="Código QR para escribir por WhatsApp a Docta Chacabuco 52"><span><strong>Escaneá y escribinos</strong>Apuntá la cámara del celular al código para abrir WhatsApp con tu consulta.</span></a></div></div></section>
+<section class="stay" id="contacto"><div class="wrap stay-grid"><div><div class="section-kicker">¿Planeás quedarte más tiempo?</div><h2 class="section-title">Tu estadía en Córdoba, a tu manera.</h2><p>Consultá por estadías prolongadas y contanos qué fechas tenés en mente. Te responderemos por correo para ayudarte a organizar tu visita.</p><div class="hero-actions"><a class="btn" href="mailto:chacabuco52cordoba@gmail.com?subject=Consulta%20por%20estad%C3%ADa%20prolongada">Escribir por email</a><a class="btn" href="https://wa.me/5493512148993?text=Hola%2C%20quisiera%20consultar%20por%20una%20estad%C3%ADa%20en%20Docta%20Chacabuco%2052" target="_blank" rel="noopener">Consultar por WhatsApp</a></div></div><div class="contact-card"><h3>Reservas y consultas</h3><p>Consultá por estadías prolongadas:</p><a class="email" href="mailto:chacabuco52cordoba@gmail.com">chacabuco52cordoba@gmail.com</a><p><strong>WhatsApp:</strong> <a class="email" href="https://wa.me/5493512148993?text=Hola%2C%20quisiera%20consultar%20por%20una%20estad%C3%ADa%20en%20Docta%20Chacabuco%2052" target="_blank" rel="noopener">+54 9 351 214 8993</a></p><div class="platforms"><a class="platform" href="https://andesrooms.com/q?q=la-docta-chacabuco" target="_blank" rel="noopener">Reservar ahora<small>Ver alojamiento</small></a></div><a class="qr" href="https://wa.me/5493512148993?text=Hola%2C%20quisiera%20consultar%20por%20una%20estad%C3%ADa%20en%20Docta%20Chacabuco%2052" target="_blank" rel="noopener"><img src="qr-whatsapp.svg" width="120" height="120" alt="Código QR para escribir por WhatsApp a Docta Chacabuco 52"><span><strong>Escaneá y escribinos</strong>Apuntá la cámara del celular al código para abrir WhatsApp con tu consulta.</span></a></div></div></section>
 </main><footer class="footer"><div class="wrap"><span>© Docta Chacabuco 52 · Centro Histórico, Córdoba</span><span>Un hogar capaz de responder a tus expectativas.</span></div></footer>
+<a class="btn share-whatsapp" href="https://wa.me/?text=Casa%20Docta%20Chacabuco%2052%20%E2%80%94%20https%3A%2F%2Fwww.doctachacabuco52.com.ar%2F" target="_blank" rel="noopener">Compartir por WhatsApp</a>
 </body></html>
