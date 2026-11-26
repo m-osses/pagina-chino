@@ -76,7 +76,7 @@ def lugares_sin_foto(s):
 
 def consultar(q):
     for intento in range(5):
-        r = S.get(API, params={"q": q, "license": LICENCIAS, "page_size": 50, "mature": "false"}, timeout=40)
+        r = S.get(API, params={"q": q, "license": LICENCIAS, "page_size": 20, "mature": "false"}, timeout=40)
         if r.status_code == 429:
             espera = int(r.headers.get("Retry-After", 60))
             print(f"  429, espero {espera}s")
