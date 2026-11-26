@@ -76,7 +76,7 @@ def lugares_sin_foto(s):
 
 def consultar(q):
     for intento in range(5):
-        r = S.get(API, params={"q": q, "license": LICENCIAS, "page_size": 20, "mature": "false"}, timeout=40)
+        r = S.get(API, params={"q": q, "license": LICENCIAS, "page_size": 50, "mature": "false"}, timeout=40)
         if r.status_code == 429:
             espera = int(r.headers.get("Retry-After", 60))
             print(f"  429, espero {espera}s")
@@ -112,9 +112,9 @@ def main():
     resultado = []
     for lugar, direccion in faltan:
         base = re.sub(r"\s*·.*$", "", lugar)
-        consultas = [f"{base} Córdoba Argentina"]
-        if base != lugar or len(palabras(base)) < 2:
-            consultas.append(f"{lugar} Córdoba")
+        # Openverse exige todas las palabras: consultas cortas y el filtro de Córdoba lo hacemos nosotros
+        nombre = re.sub(r"\b(de|del)\s+córdoba\b", "", base, flags=re.I).strip()
+        consultas = [nombre, f"{nombre} cordoba"]
         elegidas, ids = [], set()
         for q in consultas:
             crudos = consultar(q)
