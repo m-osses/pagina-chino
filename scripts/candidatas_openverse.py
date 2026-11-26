@@ -101,20 +101,24 @@ def relevante(res, lugar):
     t = norm(texto)
     if any(e in t for e in ESPANA):
         return False
-    return ("cordoba" in t or "argentina" in t) and bool(palabras(lugar) & palabras(texto))
+    return ("cordoba" in t or "argentina" in t or " unc" in f" {t}") and bool(palabras(lugar) & palabras(texto))
 
 
 def main():
     s = open(INDEX, encoding="utf-8").read()
     os.makedirs(OUT, exist_ok=True)
     faltan = lugares_sin_foto(s)
+    solo = os.environ.get("LUGAR", "").strip()
+    extra = [c.strip() for c in os.environ.get("CONSULTAS", "").split(",") if c.strip()]
+    if solo:
+        faltan = [x for x in faltan if norm(x[0]) == norm(solo)] or [(solo, "")]
     print(f"Lugares sin foto: {len(faltan)}")
     resultado = []
     for lugar, direccion in faltan:
         base = re.sub(r"\s*·.*$", "", lugar)
         # Openverse exige todas las palabras: consultas cortas y el filtro de Córdoba lo hacemos nosotros
         nombre = re.sub(r"\b(de|del)\s+córdoba\b", "", base, flags=re.I).strip()
-        consultas = [nombre, f"{nombre} cordoba"]
+        consultas = extra if (solo and extra) else [nombre, f"{nombre} cordoba"]
         elegidas, ids = [], set()
         for q in consultas:
             crudos = consultar(q)

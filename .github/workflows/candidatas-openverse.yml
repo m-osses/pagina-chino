@@ -5,6 +5,13 @@ name: Candidatas de fotos (Openverse)
 # candidatas en la rama prueba/candidatas para revisarlas. No modifica la página.
 on:
   workflow_dispatch:
+    inputs:
+      lugar:
+        description: "Opcional: título exacto de una ficha para buscar solo ese lugar"
+        required: false
+      consultas:
+        description: "Opcional: búsquedas separadas por coma (con 'lugar')"
+        required: false
 
 permissions:
   contents: write
@@ -25,11 +32,13 @@ jobs:
         run: pip install requests pillow
 
       - name: Tomar la guía de la rama de fotos
-        run: git show origin/prueba/fotos-lugares:index.html > "$RUNNER_TEMP/index-fotos.html"
+        run: git show origin/main:index.html > "$RUNNER_TEMP/index-fotos.html"
 
       - name: Buscar candidatas
         env:
           INDEX: ${{ runner.temp }}/index-fotos.html
+          LUGAR: ${{ inputs.lugar }}
+          CONSULTAS: ${{ inputs.consultas }}
         run: python scripts/candidatas_openverse.py
 
       - name: Hoja de candidatas (para descargar)
