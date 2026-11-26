@@ -93,10 +93,15 @@ def licencia_ok(res):
     return lic in {"by", "by-sa", "cc0", "pdm"}
 
 
+ESPANA = ("espana", "spain", "andalucia", "andalusia", "mezquita-catedral", "mosque-cathedral", "sevilla", "granada")
+
+
 def relevante(res, lugar):
     texto = " ".join([res.get("title") or "", " ".join(t.get("name", "") for t in res.get("tags") or [])])
     t = norm(texto)
-    return ("cordoba" in t) and bool(palabras(lugar) & palabras(texto))
+    if any(e in t for e in ESPANA):
+        return False
+    return ("cordoba" in t or "argentina" in t) and bool(palabras(lugar) & palabras(texto))
 
 
 def main():
@@ -112,7 +117,12 @@ def main():
             consultas.append(f"{lugar} Córdoba")
         elegidas, ids = [], set()
         for q in consultas:
-            for res in consultar(q):
+            crudos = consultar(q)
+            print(f"  [{q}] {len(crudos)} resultados con licencia libre")
+            for res in crudos[:6]:
+                tags = ",".join(t.get("name", "") for t in (res.get("tags") or [])[:6])
+                print(f"     - {res.get('source')} | {res.get('license')} | {(res.get('title') or '')[:60]} | tags: {tags[:70]} | rel={relevante(res, lugar)}")
+            for res in crudos:
                 if res["id"] in ids or not licencia_ok(res) or not relevante(res, lugar):
                     continue
                 ids.add(res["id"])
