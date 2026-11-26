@@ -1,0 +1,531 @@
+[
+ {
+  "lugar": "Aeropuerto Internacional Ambrosio Taravella",
+  "metodo": "búsqueda Wikipedia",
+  "articulo": "Aeropuerto Internacional Ingeniero Aeronáutico Ambrosio Taravella",
+  "antes": "externa",
+  "archivo": "lugares/aeropuerto-internacional-ambrosio-taravella.webp",
+  "file": "File:Aeropuerto de Córdoba 2009-11-29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Aeropuerto_de_C%C3%B3rdoba_2009-11-29.jpg",
+  "autor": "https://www.flickr.com/photos/ccordova/",
+  "licencia": "CC BY 2.0"
+ },
+ {
+  "lugar": "Terminal de Ómnibus T1",
+  "metodo": "data-wiki",
+  "articulo": "Terminal de Ómnibus de Córdoba",
+  "antes": "data-wiki",
+  "archivo": "lugares/terminal-de-omnibus-t1.webp",
+  "file": "File:Terminales 1 y 2 de ómnibus Córdoba (Argentina) 2012-03-05.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Terminales_1_y_2_de_%C3%B3mnibus_C%C3%B3rdoba_(Argentina)_2012-03-05.jpg",
+  "autor": "Alakasam",
+  "licencia": "CC BY-SA 3.0"
+ },
+ {
+  "lugar": "Terminal de Ómnibus T2",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "externa"
+ },
+ {
+  "lugar": "Estación Mitre",
+  "metodo": "búsqueda Wikipedia",
+  "articulo": "Estación Córdoba Mitre",
+  "antes": "externa",
+  "archivo": "lugares/estacion-mitre.webp",
+  "file": "File:Entrada de la Estación Córdoba.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Entrada_de_la_Estaci%C3%B3n_C%C3%B3rdoba.JPG",
+  "autor": "Dario Alpern",
+  "licencia": "CC BY-SA 4.0"
+ },
+ {
+  "lugar": "Plaza San Martín, Catedral y Cabildo",
+  "metodo": "búsqueda Wikipedia",
+  "articulo": "Plaza San Martín (Córdoba)",
+  "antes": "externa",
+  "archivo": "lugares/plaza-san-martin-catedral-y-cabildo.webp",
+  "file": "File:Plaza San Martín Córdoba 2011-03-06.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Plaza_San_Mart%C3%ADn_C%C3%B3rdoba_2011-03-06.jpg",
+  "autor": "Rafael Bravo",
+  "licencia": "CC BY-SA 2.0"
+ },
+ {
+  "lugar": "Manzana Jesuítica",
+  "metodo": "búsqueda Wikipedia",
+  "articulo": "Manzana Jesuítica",
+  "antes": "externa",
+  "archivo": "lugares/manzana-jesuitica.webp",
+  "file": "File:Placa Manzana Jesuítica 2009-03-23.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Placa_Manzana_Jesu%C3%ADtica_2009-03-23.jpg",
+  "autor": "Alakasam.",
+  "licencia": "CC BY-SA 3.0"
+ },
+ {
+  "lugar": "Ciudad Universitaria",
+  "metodo": "búsqueda Wikipedia",
+  "articulo": "Ciudad Universitaria de Córdoba",
+  "antes": "externa",
+  "archivo": "lugares/ciudad-universitaria.webp",
+  "file": "File:Entrada Ciudad Universitaria de Córdoba-01.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Entrada_Ciudad_Universitaria_de_C%C3%B3rdoba-01.jpg",
+  "autor": "Alakasam.",
+  "licencia": "CC BY-SA 3.0"
+ },
+ {
+  "lugar": "Parque Sarmiento",
+  "metodo": "búsqueda Wikipedia",
+  "articulo": "Parque Sarmiento (Córdoba)",
+  "antes": "externa",
+  "archivo": "lugares/parque-sarmiento.webp",
+  "file": "File:Parque Sarmiento (Lago).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Parque_Sarmiento_(Lago).jpg",
+  "autor": "Guadalupe S Ticse",
+  "licencia": "CC BY-SA 4.0"
+ },
+ {
+  "lugar": "Plaza España",
+  "metodo": "búsqueda Wikipedia",
+  "articulo": "Plaza España (Córdoba)",
+  "antes": "externa",
+  "archivo": "lugares/plaza-espana.webp",
+  "file": "File:Plaza España, Córdoba, Argentina.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Plaza_Espa%C3%B1a,_C%C3%B3rdoba,_Argentina.jpg",
+  "autor": "Miguel Angel Roca",
+  "licencia": "CC BY-SA 3.0"
+ },
+ {
+  "lugar": "Paseo del Buen Pastor",
+  "metodo": "búsqueda Wikipedia",
+  "articulo": "Paseo del Buen Pastor",
+  "antes": "externa",
+  "archivo": "lugares/paseo-del-buen-pastor.webp",
+  "file": "File:Paseo buen pastor córdoba.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Paseo_buen_pastor_c%C3%B3rdoba.jpg",
+  "autor": "Gonce",
+  "licencia": "CC BY-SA 4.0"
+ },
+ {
+  "lugar": "Barrio Güemes y La Cañada",
+  "metodo": "búsqueda Wikipedia",
+  "articulo": "La Cañada (ciudad de Córdoba)",
+  "antes": "externa",
+  "archivo": "lugares/barrio-guemes-y-la-canada.webp",
+  "file": "File:Cañada desde Bv. San Juan.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Ca%C3%B1ada_desde_Bv._San_Juan.jpg",
+  "autor": "Santi Cba",
+  "licencia": "CC0"
+ },
+ {
+  "lugar": "Polo gastronómico de Güemes",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "externa"
+ },
+ {
+  "lugar": "Polo gastronómico de Nueva Córdoba",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "externa"
+ },
+ {
+  "lugar": "Mercado Norte",
+  "metodo": "elegida a mano",
+  "articulo": null,
+  "antes": "externa",
+  "archivo": "lugares/mercado-norte.webp",
+  "file": "openverse:4fc44865-2db9-4f5c-bae9-37d59bdae06d",
+  "page": "https://www.flickr.com/photos/21918379@N00/19535297114",
+  "autor": "eugemarconi",
+  "licencia": "CC BY 2.0"
+ },
+ {
+  "lugar": "Polo gastronómico de General Paz",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "externa"
+ },
+ {
+  "lugar": "Cherry Season · Chacabuco",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "externa"
+ },
+ {
+  "lugar": "La Zete",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "sin foto"
+ },
+ {
+  "lugar": "Qara Cocina Árabe",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "externa"
+ },
+ {
+  "lugar": "Al Malek",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "externa"
+ },
+ {
+  "lugar": "Heladería · Chacabuco 290",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "sin foto"
+ },
+ {
+  "lugar": "Heladería · Chacabuco 511",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "sin foto"
+ },
+ {
+  "lugar": "Heladería · Chacabuco 625",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "sin foto"
+ },
+ {
+  "lugar": "Feria Agroecológica de Ciudad Universitaria",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "externa"
+ },
+ {
+  "lugar": "Paseo de las Artes",
+  "metodo": "búsqueda Commons",
+  "articulo": null,
+  "antes": "externa",
+  "archivo": "lugares/paseo-de-las-artes.webp",
+  "file": "File:Paseo de las artes.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Paseo_de_las_artes.jpg",
+  "autor": "Rodrigo Galindez from Córdoba, Argentina",
+  "licencia": "CC BY 2.0"
+ },
+ {
+  "lugar": "Super Park",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "data-wiki"
+ },
+ {
+  "lugar": "Parque de la Biodiversidad",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "data-wiki"
+ },
+ {
+  "lugar": "Plaza Cielo Tierra",
+  "metodo": "búsqueda Commons",
+  "articulo": null,
+  "antes": "externa",
+  "archivo": "lugares/plaza-cielo-tierra.webp",
+  "file": "File:Péndulo de Foucault, Plaza Cielo Tierra, Córdoba, Argentina.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:P%C3%A9ndulo_de_Foucault,_Plaza_Cielo_Tierra,_C%C3%B3rdoba,_Argentina.jpg",
+  "autor": "Decogenasim",
+  "licencia": "CC BY 4.0"
+ },
+ {
+  "lugar": "Museo de Ciencias Naturales",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "data-wiki"
+ },
+ {
+  "lugar": "Parque de las Tejas",
+  "metodo": "data-wiki",
+  "articulo": "Parque de las Tejas",
+  "antes": "data-wiki",
+  "archivo": "lugares/parque-de-las-tejas.webp",
+  "file": "File:Parque de las Tejas 2024.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Parque_de_las_Tejas_2024.jpg",
+  "autor": "Santi Cba",
+  "licencia": "CC0"
+ },
+ {
+  "lugar": "Teatro del Libertador General San Martín",
+  "metodo": "búsqueda Wikipedia",
+  "articulo": "Teatro del Libertador General San Martín",
+  "antes": "externa",
+  "archivo": "lugares/teatro-del-libertador-general-san-martin.webp",
+  "file": "File:Cordoba-teatrolibertador.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Cordoba-teatrolibertador.JPG",
+  "autor": "User:Cordobes",
+  "licencia": "CC BY-SA 3.0"
+ },
+ {
+  "lugar": "Teatro Real",
+  "metodo": "data-wiki",
+  "articulo": "Teatro Real de Córdoba",
+  "antes": "data-wiki",
+  "archivo": "lugares/teatro-real.webp",
+  "file": "File:Teatro Real, Sala Carlos Gimenez.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Teatro_Real,_Sala_Carlos_Gimenez.jpg",
+  "autor": "Pabloandres1982",
+  "licencia": "CC BY-SA 3.0"
+ },
+ {
+  "lugar": "Teatro Comedia",
+  "metodo": "data-wiki",
+  "articulo": "Teatro Comedia",
+  "antes": "data-wiki",
+  "archivo": "lugares/teatro-comedia.webp",
+  "file": "File:Fachada del Teatro Comedia.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fachada_del_Teatro_Comedia.jpg",
+  "autor": "Santi Cba",
+  "licencia": "CC0"
+ },
+ {
+  "lugar": "Cineclub Municipal Hugo del Carril",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "externa"
+ },
+ {
+  "lugar": "Cines Hoyts Patio Olmos",
+  "metodo": "búsqueda Wikipedia",
+  "articulo": "Patio Olmos",
+  "antes": "sin foto",
+  "archivo": "lugares/cines-hoyts-patio-olmos.webp",
+  "file": "File:Patio Olmos 2011-12-22.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Patio_Olmos_2011-12-22.jpg",
+  "autor": "Jarod Burns",
+  "licencia": "CC BY-SA 2.0"
+ },
+ {
+  "lugar": "Complejo Cinerama",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "externa"
+ },
+ {
+  "lugar": "Patio Olmos",
+  "metodo": "búsqueda Wikipedia",
+  "articulo": "Patio Olmos",
+  "antes": "externa",
+  "archivo": "lugares/patio-olmos.webp",
+  "file": "File:Patio Olmos 2011-12-22.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Patio_Olmos_2011-12-22.jpg",
+  "autor": "Jarod Burns",
+  "licencia": "CC BY-SA 2.0"
+ },
+ {
+  "lugar": "Nuevocentro Shopping",
+  "metodo": "data-wiki",
+  "articulo": "Nuevocentro Shopping",
+  "antes": "data-wiki",
+  "archivo": "lugares/nuevocentro-shopping.webp",
+  "file": "File:Nuevocentro Celeste 2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Nuevocentro_Celeste_2.jpg",
+  "autor": "Fadesga",
+  "licencia": "CC BY-SA 4.0"
+ },
+ {
+  "lugar": "Peatonales del Centro Histórico",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "externa"
+ },
+ {
+  "lugar": "Centro Islámico de Córdoba",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "externa"
+ },
+ {
+  "lugar": "Mezquita de Córdoba",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "sin foto"
+ },
+ {
+  "lugar": "Iglesia Catedral",
+  "metodo": "data-wiki",
+  "articulo": "Catedral de Nuestra Señora de la Asunción (Córdoba)",
+  "antes": "data-wiki",
+  "archivo": "lugares/iglesia-catedral.webp",
+  "file": "File:Catedral de Córdoba (2010 01) - panoramio.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Catedral_de_C%C3%B3rdoba_(2010_01)_-_panoramio.jpg",
+  "autor": "Maula",
+  "licencia": "CC BY-SA 3.0"
+ },
+ {
+  "lugar": "Iglesia de los Capuchinos",
+  "metodo": "data-wiki",
+  "articulo": "Iglesia del Sagrado Corazón (Córdoba)",
+  "antes": "data-wiki",
+  "archivo": "lugares/iglesia-de-los-capuchinos.webp",
+  "file": "File:Sagrado Corazon de Jesús de los Capuchinos, Cordoba.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Sagrado_Corazon_de_Jes%C3%BAs_de_los_Capuchinos,_Cordoba.jpg",
+  "autor": "Randal Sheppard",
+  "licencia": "CC BY-SA 2.0"
+ },
+ {
+  "lugar": "Iglesia de la Compañía de Jesús",
+  "metodo": "búsqueda Commons",
+  "articulo": null,
+  "antes": "data-wiki",
+  "archivo": "lugares/iglesia-de-la-compania-de-jesus.webp",
+  "file": "File:Iglesia de la Compañía de Jesús (Córdoba, Argentina) 22.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Iglesia_de_la_Compa%C3%B1%C3%ADa_de_Jes%C3%BAs_(C%C3%B3rdoba,_Argentina)_22.jpg",
+  "autor": "Laura Fiorucci",
+  "licencia": "CC BY-SA 4.0"
+ },
+ {
+  "lugar": "Basílica de Santo Domingo",
+  "metodo": "data-wiki",
+  "articulo": "Basílica de Santo Domingo (Córdoba)",
+  "antes": "data-wiki",
+  "archivo": "lugares/basilica-de-santo-domingo.webp",
+  "file": "File:Iglesiaencordoba.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Iglesiaencordoba.jpg",
+  "autor": "Micah MacAllen from Travel Bums, Latin America",
+  "licencia": "CC BY-SA 2.0"
+ },
+ {
+  "lugar": "Iglesia San Francisco de Asís",
+  "metodo": "excluida a mano (scripts/fotos_excepciones.json)",
+  "articulo": null,
+  "antes": "externa"
+ },
+ {
+  "lugar": "Sinagoga Beit Israel",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "externa"
+ },
+ {
+  "lugar": "Iglesia Ortodoxa San Jorge",
+  "metodo": "excluida a mano (scripts/fotos_excepciones.json)",
+  "articulo": null,
+  "antes": "externa"
+ },
+ {
+  "lugar": "Museo Marqués de Sobremonte",
+  "metodo": "data-wiki",
+  "articulo": "Museo Histórico Provincial Marqués de Sobremonte",
+  "antes": "data-wiki",
+  "archivo": "lugares/museo-marques-de-sobremonte.webp",
+  "file": "File:Casa del Virrey Sobremonte.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Casa_del_Virrey_Sobremonte.JPG",
+  "autor": "Albano Azarian",
+  "licencia": "CC BY-SA 3.0"
+ },
+ {
+  "lugar": "Museo del Cuarteto",
+  "metodo": "búsqueda Commons",
+  "articulo": null,
+  "antes": "data-wiki",
+  "archivo": "lugares/museo-del-cuarteto.webp",
+  "file": "File:Espacio dedicado a La Mona Jiménez en el Museo del Cuarteto.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Espacio_dedicado_a_La_Mona_Jim%C3%A9nez_en_el_Museo_del_Cuarteto.jpg",
+  "autor": "Santi Cba",
+  "licencia": "CC0"
+ },
+ {
+  "lugar": "Museo Genaro Pérez",
+  "metodo": "búsqueda Wikipedia",
+  "articulo": "Museo Genaro Pérez",
+  "antes": "externa",
+  "archivo": "lugares/museo-genaro-perez.webp",
+  "file": "File:Museo Genaro Pérez.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Museo_Genaro_P%C3%A9rez.jpg",
+  "autor": "Laura Fiorucci",
+  "licencia": "CC BY-SA 4.0"
+ },
+ {
+  "lugar": "Museo Evita · Palacio Ferreyra",
+  "metodo": "búsqueda Wikipedia",
+  "articulo": "Museo Superior de Bellas Artes Evita",
+  "antes": "externa",
+  "archivo": "lugares/museo-evita-palacio-ferreyra.webp",
+  "file": "File:Fachadapalacioferreyra.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Fachadapalacioferreyra.JPG",
+  "autor": "This photo was taken by Leandro A. Martínez.",
+  "licencia": "CC BY-SA 4.0"
+ },
+ {
+  "lugar": "Museo Emilio Caraffa",
+  "metodo": "data-wiki",
+  "articulo": "Museo Provincial de Bellas Artes Emilio Caraffa",
+  "antes": "data-wiki",
+  "archivo": "lugares/museo-emilio-caraffa.webp",
+  "file": "File:Museo Emilio Caraffa 2009-11-25.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Museo_Emilio_Caraffa_2009-11-25.jpg",
+  "autor": "https://www.flickr.com/photos/ccordova/",
+  "licencia": "CC BY 2.0"
+ },
+ {
+  "lugar": "Museo Palacio Dionisi",
+  "metodo": "búsqueda Wikipedia",
+  "articulo": "Museo Palacio Dionisi",
+  "antes": "externa",
+  "archivo": "lugares/museo-palacio-dionisi.webp",
+  "file": "File:Palacio Dionisi de noche.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Palacio_Dionisi_de_noche.JPG",
+  "autor": "Lcsrns",
+  "licencia": "CC BY-SA 3.0"
+ },
+ {
+  "lugar": "Museo de Antropología UNC",
+  "metodo": "búsqueda Commons",
+  "articulo": null,
+  "antes": "data-wiki",
+  "archivo": "lugares/museo-de-antropologia-unc.webp",
+  "file": "File:Museo de Antropología - IIDACOR.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Museo_de_Antropolog%C3%ADa_-_IIDACOR.jpg",
+  "autor": "Andresizeta",
+  "licencia": "CC BY-SA 4.0"
+ },
+ {
+  "lugar": "Archivo Provincial de la Memoria",
+  "metodo": "búsqueda Commons",
+  "articulo": null,
+  "antes": "data-wiki",
+  "archivo": "lugares/archivo-provincial-de-la-memoria.webp",
+  "file": "File:Pasaje del Archivo Provincial de la Memoria - 16-03-2026 02.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Pasaje_del_Archivo_Provincial_de_la_Memoria_-_16-03-2026_02.jpg",
+  "autor": "eneroenlaciudad",
+  "licencia": "CC BY 4.0"
+ },
+ {
+  "lugar": "Museo de Arte Religioso Juan de Tejeda",
+  "metodo": "data-wiki",
+  "articulo": "Museo de Arte Religioso Juan de Tejeda",
+  "antes": "data-wiki",
+  "archivo": "lugares/museo-de-arte-religioso-juan-de-tejeda.webp",
+  "file": "File:Santa teresa 1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Santa_teresa_1.jpg",
+  "autor": "Nicolás Riofrio",
+  "licencia": "CC BY-SA 3.0"
+ },
+ {
+  "lugar": "Museo de la Industria",
+  "metodo": "búsqueda Commons",
+  "articulo": null,
+  "antes": "data-wiki",
+  "archivo": "lugares/museo-de-la-industria.webp",
+  "file": "File:Museo de la Industria Córdoba 2009-11-27.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Museo_de_la_Industria_C%C3%B3rdoba_2009-11-27.jpg",
+  "autor": "https://www.flickr.com/photos/ccordova/",
+  "licencia": "CC BY 2.0"
+ },
+ {
+  "lugar": "Museo de Ciencias Naturales",
+  "metodo": "sin foto en Wikimedia",
+  "articulo": null,
+  "antes": "data-wiki"
+ },
+ {
+  "lugar": "Museo Metropolitano de Arte Urbano",
+  "metodo": "búsqueda Commons",
+  "articulo": null,
+  "antes": "data-wiki",
+  "archivo": "lugares/museo-metropolitano-de-arte-urbano.webp",
+  "file": "File:Museo Metropolitano de Arte Urbano (MmAU).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Museo_Metropolitano_de_Arte_Urbano_(MmAU).jpg",
+  "autor": "GalegoLunaJuanAntonio",
+  "licencia": "CC0"
+ }
+]
