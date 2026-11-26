@@ -1,6 +1,9 @@
 {
   "_explicacion": "Lugar (título de la ficha) -> null para no usar foto, o \"File:Nombre.jpg\" de Commons para forzar una foto concreta.",
-  "Mercado Norte": null,
+  "Mercado Norte": {
+    "openverse": "4fc44865-2db9-4f5c-bae9-37d59bdae06d",
+    "nota": "Flickr eugemarconi, CC BY 2.0, revisada a mano"
+  },
   "Iglesia San Francisco de Asís": null,
   "Iglesia Ortodoxa San Jorge": null
 }
