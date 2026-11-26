@@ -12,6 +12,10 @@ on:
       consultas:
         description: "Opcional: búsquedas separadas por coma (con 'lugar')"
         required: false
+      cantidad:
+        description: "Candidatas por lugar"
+        required: false
+        default: "3"
 
 permissions:
   contents: write
@@ -39,6 +43,7 @@ jobs:
           INDEX: ${{ runner.temp }}/index-fotos.html
           LUGAR: ${{ inputs.lugar }}
           CONSULTAS: ${{ inputs.consultas }}
+          POR_LUGAR: ${{ inputs.cantidad || '3' }}
         run: python scripts/candidatas_openverse.py
 
       - name: Hoja de candidatas (para descargar)

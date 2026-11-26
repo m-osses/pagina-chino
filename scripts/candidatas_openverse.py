@@ -25,7 +25,7 @@ OUT = "candidatas"
 API = "https://api.openverse.org/v1/images/"
 UA = "CasaDoctaGuia/1.0 (https://www.doctachacabuco52.com.ar; chacabuco52cordoba@gmail.com)"
 LICENCIAS = "by,by-sa,cc0,pdm"
-POR_LUGAR = 3
+POR_LUGAR = int(os.environ.get("POR_LUGAR", "3"))
 PAUSA = 13  # el acceso anónimo admite pocas consultas por minuto
 
 S = requests.Session()
