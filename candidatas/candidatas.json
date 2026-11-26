@@ -1,0 +1,48 @@
+[
+ {
+  "lugar": "Feria Agroecológica de Ciudad Universitaria",
+  "direccion": "Bosquecito de la Facultad de Ciencias de la Comunicación, UNC",
+  "candidatas": [
+   {
+    "n": 1,
+    "archivo": "candidatas/feria-agroecologica-de-ciudad-universitaria-1.jpg",
+    "openverse": "c5fb22e7-8479-4032-aa51-e6c6839ac4aa",
+    "titulo": "Estampas de la memoria - Casa Imaginada en Feria Agroecologica 02 -2026, Córdoba - 55172907577",
+    "autor": "eneroenlaciudad",
+    "licencia": "CC BY 4.0",
+    "fuente": "wikimedia",
+    "pagina": "https://commons.wikimedia.org/w/index.php?curid=187592868"
+   },
+   {
+    "n": 2,
+    "archivo": "candidatas/feria-agroecologica-de-ciudad-universitaria-2.jpg",
+    "openverse": "7288aea3-4611-48d9-97f8-40b65bd33a30",
+    "titulo": "Estampas de la memoria - Casa Imaginada en Feria Agroecologica 03 -2026, Córdoba - 55173974373",
+    "autor": "eneroenlaciudad",
+    "licencia": "CC BY 4.0",
+    "fuente": "wikimedia",
+    "pagina": "https://commons.wikimedia.org/w/index.php?curid=187592872"
+   },
+   {
+    "n": 3,
+    "archivo": "candidatas/feria-agroecologica-de-ciudad-universitaria-3.jpg",
+    "openverse": "89d0b244-96b7-4681-9a6a-9cd1a73e0add",
+    "titulo": "Estampas de la memoria - Casa Imaginada en Feria Agroecologica 04 -2026, Córdoba - 55174054029",
+    "autor": "eneroenlaciudad",
+    "licencia": "CC BY 4.0",
+    "fuente": "wikimedia",
+    "pagina": "https://commons.wikimedia.org/w/index.php?curid=187592874"
+   },
+   {
+    "n": 4,
+    "archivo": "candidatas/feria-agroecologica-de-ciudad-universitaria-4.jpg",
+    "openverse": "6fe2c8d8-c6bb-41cd-aa28-a5d6dbbe7382",
+    "titulo": "Estampas de la memoria - Casa Imaginada en Feria Agroecologica 01 -2026, Córdoba - 55173807076",
+    "autor": "eneroenlaciudad",
+    "licencia": "CC BY 4.0",
+    "fuente": "wikimedia",
+    "pagina": "https://commons.wikimedia.org/w/index.php?curid=187592864"
+   }
+  ]
+ }
+]
