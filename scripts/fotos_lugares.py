@@ -103,8 +103,22 @@ def imagen_de_articulo(titulo):
     return p.get("pageimage"), p.get("title")
 
 
+EXCEPCIONES = {}
+if os.path.exists("scripts/fotos_excepciones.json"):
+    EXCEPCIONES = {k: v for k, v in json.load(open("scripts/fotos_excepciones.json", encoding="utf-8")).items()
+                   if not k.startswith("_")}
+
+
 def buscar(lugar, wiki):
     """Devuelve (info, metodo, articulo) o (None, motivo, None)."""
+    if lugar in EXCEPCIONES:
+        forzada = EXCEPCIONES[lugar]
+        if not forzada:
+            return None, "excluida a mano (scripts/fotos_excepciones.json)", None
+        info = info_archivo(forzada)
+        if info and "rechazada" not in info:
+            return info, "elegida a mano", None
+        return None, f"foto elegida a mano no utilizable: {forzada}", None
     intentos = []
     if wiki:
         intentos.append(("data-wiki", wiki))
