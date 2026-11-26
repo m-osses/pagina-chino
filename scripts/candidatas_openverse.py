@@ -82,6 +82,10 @@ def consultar(q):
             print(f"  429, espero {espera}s")
             time.sleep(min(espera, 300))
             continue
+        if r.status_code >= 500:  # error temporal del servidor: reintentar
+            print(f"  {r.status_code}, reintento en {20 * (intento + 1)}s")
+            time.sleep(20 * (intento + 1))
+            continue
         r.raise_for_status()
         time.sleep(PAUSA)
         return r.json().get("results", [])
