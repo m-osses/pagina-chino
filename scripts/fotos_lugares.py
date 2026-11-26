@@ -97,6 +97,23 @@ def info_archivo(file_title):
     }
 
 
+def info_openverse(ident):
+    """Datos de una imagen de Openverse (Flickr, etc.), o None si la licencia no es libre."""
+    r = S.get(f"https://api.openverse.org/v1/images/{ident}/", timeout=30)
+    if r.status_code == 404:
+        return None
+    r.raise_for_status()
+    j = r.json()
+    lic = (j.get("license") or "").lower()
+    if lic not in ("by", "by-sa", "cc0", "pdm"):
+        return {"rechazada": lic or "sin licencia", "file": ident}
+    nombre = {"cc0": "CC0", "pdm": "Dominio público"}.get(lic, f"CC {lic.upper()} {j.get('license_version') or ''}".strip())
+    fuente = (j.get("source") or j.get("provider") or "Openverse").replace("_", " ").title()
+    return {"file": f"openverse:{ident}", "thumb": j["url"], "page": j.get("foreign_landing_url") or j["url"],
+            "autor": strip_tags(j.get("creator") or "")[:80] or "Autor en la fuente", "licencia": nombre,
+            "fuente": fuente}
+
+
 def imagen_de_articulo(titulo):
     j = api(WIKI_API, action="query", titles=titulo, prop="pageimages", piprop="name", redirects=1)
     p = (j.get("query", {}).get("pages") or [{}])[0]
@@ -115,7 +132,7 @@ def buscar(lugar, wiki):
         forzada = EXCEPCIONES[lugar]
         if not forzada:
             return None, "excluida a mano (scripts/fotos_excepciones.json)", None
-        info = info_archivo(forzada)
+        info = info_openverse(forzada["openverse"]) if isinstance(forzada, dict) else info_archivo(forzada)
         if info and "rechazada" not in info:
             return info, "elegida a mano", None
         return None, f"foto elegida a mano no utilizable: {forzada}", None
@@ -220,7 +237,7 @@ def main():
             nuevo_img = (f'<img alt="{alt}" class="g-place-img" src="{ruta}" '
                          f'loading="lazy" decoding="async">')
             credito = (f'<figcaption><a href="{html.escape(info["page"])}" rel="noopener" target="_blank">'
-                       f'Foto: {html.escape(info["autor"])} · {html.escape(info["licencia"])} · Wikimedia Commons</a></figcaption>')
+                       f'Foto: {html.escape(info["autor"])} · {html.escape(info["licencia"])} · {html.escape(info.get("fuente", "Wikimedia Commons"))}</a></figcaption>')
         else:
             # sin foto libre: se quita la imagen externa y queda el enlace a Google Maps
             nuevo_img = f'<img alt="{alt}" class="g-place-img" loading="lazy" decoding="async">'

@@ -1,0 +1,49 @@
+name: Candidatas de fotos (Openverse)
+
+# Ejecutar a mano. Busca en Openverse (Flickr, Wikimedia y otras fuentes libres) fotos para
+# los lugares de la guía que siguen sin foto en la rama prueba/fotos-lugares, y guarda las
+# candidatas en la rama prueba/candidatas para revisarlas. No modifica la página.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  candidatas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install requests pillow
+
+      - name: Tomar la guía de la rama de fotos
+        run: git show origin/prueba/fotos-lugares:index.html > "$RUNNER_TEMP/index-fotos.html"
+
+      - name: Buscar candidatas
+        env:
+          INDEX: ${{ runner.temp }}/index-fotos.html
+        run: python scripts/candidatas_openverse.py
+
+      - name: Hoja de candidatas (para descargar)
+        uses: actions/upload-artifact@v4
+        with:
+          name: candidatas
+          path: candidatas/
+          if-no-files-found: warn
+
+      - name: Guardar en la rama de revisión
+        run: |
+          git switch -c prueba/candidatas
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add candidatas
+          git commit -m "Candidatas de fotos desde Openverse (para revisar)"
+          git push --force origin prueba/candidatas
