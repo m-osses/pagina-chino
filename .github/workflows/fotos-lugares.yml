@@ -1,0 +1,50 @@
+name: Fotos de lugares (Wikimedia)
+
+# Se ejecuta a mano desde la pestaña Actions → "Fotos de lugares (Wikimedia)" → Run workflow.
+# Descarga fotos libres de Wikimedia Commons para la Guía de Gabriel y deja el resultado
+# en la rama prueba/fotos-lugares para revisarlo antes de pasarlo a main.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  RAMA: prueba/fotos-lugares
+
+jobs:
+  fotos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install requests pillow
+
+      - name: Crear rama de revisión desde main
+        run: git switch -c "$RAMA"
+
+      - name: Descargar fotos y actualizar la guía
+        run: python scripts/fotos_lugares.py
+
+      - name: Hoja de revisión (para descargar)
+        uses: actions/upload-artifact@v4
+        with:
+          name: revision-fotos
+          path: |
+            revision-fotos.jpg
+            lugares/creditos.json
+          if-no-files-found: warn
+
+      - name: Guardar en la rama de revisión
+        run: |
+          rm -f revision-fotos.jpg
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lugares index.html
+          git commit -m "Fotos de lugares desde Wikimedia Commons (para revisar)"
+          git push --force origin "$RAMA"
